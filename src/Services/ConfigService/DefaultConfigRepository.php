@@ -1,6 +1,6 @@
 <?php
 
-namespace Alexusmai\LaravelFileManager\Services\ConfigService;
+namespace Alish\FileManager\Services\ConfigService;
 
 /**
  * Class DefaultConfigRepository
