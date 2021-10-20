@@ -415,7 +415,7 @@ class FileManagerController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function alishButton()
+    public function alishfmButton()
     {
         return view('file-manager::alishfmButton');
     }
