@@ -417,6 +417,6 @@ class FileManagerController extends Controller
      */
     public function alishButton()
     {
-        return view('file-manager::alishButton');
+        return view('file-manager::alishfmButton');
     }
 }
