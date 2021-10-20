@@ -2,7 +2,7 @@
 
 ## Documentation
 
-[Laravel File Manager Docs](./docs/index.md)
+[Alish File Manager Docs](./docs/index.md)
 * [Installation](./docs/installation.md)
 * [Configuration](./docs/configuration.md)
 * [Integration](./docs/integration.md)
