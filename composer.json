@@ -1,5 +1,5 @@
 {
-    "name": "alish/file-manager",
+    "name": "afm/file-manager",
     "description": "File manager for Alish",
     "keywords": [
         "alish",
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Alexusmai\\LaravelFileManager\\": "src"
+            "Alish\\FileManager\\": "src"
         }
     },
     "extra": {
