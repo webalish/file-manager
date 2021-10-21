@@ -19026,7 +19026,7 @@
                     staticClass: "alishfm-modal",
                     on: {click: e.hideModal}
                 }, [n("div", {
-                    staticClass: "modal-dialog",
+                    staticClass: "modal-dialog modal-dialog-centered",
                     class: e.modalSize,
                     attrs: {role: "document"},
                     on: {
@@ -19038,8 +19038,8 @@
             }, bt = [], wt = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-folder"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.newFile.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {staticClass: "form-group"}, [n("label", {attrs: {for: "alishfm-file-name"}}, [e._v(e._s(e.lang.modal.newFile.fieldName))]), n("input", {
                     directives: [{
@@ -19086,8 +19086,8 @@
             }, Ct = _t, St = Object(be["a"])(Ct, wt, xt, !1, null, null, null), Tt = St.exports, Et = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-folder"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.newFolder.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {staticClass: "form-group"}, [n("label", {attrs: {for: "alishfm-folder-name"}}, [e._v(e._s(e.lang.modal.newFolder.fieldName))]), n("input", {
                     directives: [{
@@ -19138,8 +19138,8 @@
             }, Nt = Mt, Ot = Object(be["a"])(Nt, Et, At, !1, null, null, null), Dt = Ot.exports, Lt = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-upload"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.upload.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal", "aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {
                     directives: [{
@@ -19263,8 +19263,8 @@
             Rt = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-delete"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.delete.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [e.selectedItems.length ? n("div", [n("selected-file-list")], 1) : n("div", [n("span", {staticClass: "text-danger"}, [e._v(e._s(e.lang.modal.delete.noSelected))])])]), n("div", {staticClass: "modal-footer"}, [n("button", {
                     staticClass: "btn btn-danger",
@@ -19312,15 +19312,15 @@
             }, Gt = Yt, Kt = Object(be["a"])(Gt, Rt, $t, !1, null, null, null), Xt = Kt.exports, Zt = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-clipboard"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.clipboard.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [e.clipboard.type ? [n("div", {staticClass: "d-flex justify-content-between"}, [n("div", {staticClass: "w-75 text-truncate"}, [n("span", [n("i", {staticClass: "far fa-hdd"}), e._v(e._s(e.clipboard.disk) + " ")])]), n("div", {staticClass: "text-right text-muted"}, [n("span", {attrs: {title: e.lang.clipboard.actionType + " - " + e.lang.clipboard[e.clipboard.type]}}, ["copy" === e.clipboard.type ? n("i", {staticClass: "fas fa-copy"}) : n("i", {staticClass: "fas fa-cut"})])])]), n("hr"), e._l(e.directories, (function (t, r) {
                     return n("div", {
                         key: "d-" + r,
                         staticClass: "d-flex justify-content-between"
                     }, [n("div", {staticClass: "w-75 text-truncate"}, [n("span", [n("i", {staticClass: "far fa-folder"}), e._v(e._s(t.name) + " ")])]), n("div", {staticClass: "text-right"}, [n("button", {
-                        staticClass: "close",
+                        staticClass: "btn-close",
                         attrs: {type: "button", title: e.lang.btn.delete},
                         on: {
                             click: function (n) {
@@ -19336,7 +19336,7 @@
                         staticClass: "far",
                         class: t.icon
                     }), e._v(e._s(t.name) + " ")])]), n("div", {staticClass: "text-right"}, [n("button", {
-                        staticClass: "close",
+                        staticClass: "btn-close",
                         attrs: {type: "button", title: e.lang.btn.delete},
                         on: {
                             click: function (n) {
@@ -19378,8 +19378,8 @@
             rn = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-errors"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.status.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button", "data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [e.errors.length ? n("div", [n("ul", {staticClass: "list-unstyled"}, e._l(e.errors, (function (t, r) {
                     return n("li", {key: r}, [e._v(" " + e._s(t.status) + " - " + e._s(t.message) + " ")])
@@ -19404,8 +19404,8 @@
             }, sn = on, ln = Object(be["a"])(sn, rn, an, !1, null, null, null), cn = ln.exports, un = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-rename"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.rename.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button", "data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {staticClass: "form-group"}, [n("label", {attrs: {for: "alishfm-input-rename"}}, [e._v(e._s(e.lang.modal.rename.fieldName))]), n("input", {
                     directives: [{
@@ -19463,8 +19463,8 @@
             }, pn = fn, hn = Object(be["a"])(pn, un, dn, !1, null, null, null), mn = hn.exports, gn = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-properties"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.properties.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {staticClass: "row"}, [n("div", {staticClass: "col-2"}, [e._v(e._s(e.lang.modal.properties.disk) + ":")]), n("div", {staticClass: "col-9"}, [e._v(e._s(e.selectedDisk))]), n("div", {staticClass: "col-1 text-right"}, [n("i", {
                     staticClass: "far fa-copy",
@@ -19549,8 +19549,8 @@
             kn = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-preview"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title w-75 text-truncate"}, [e._v(" " + e._s(e.showCropperModule ? e.lang.modal.cropper.title : e.lang.modal.preview.title) + " "), n("small", {staticClass: "text-muted pl-3"}, [e._v(e._s(e.selectedItem.basename))])]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body text-center"}, [e.showCropperModule ? [n("cropper-module", {
                     attrs: {
@@ -19581,8 +19581,8 @@
             Tn = (n("643a"), Object(be["a"])(Sn, kn, _n, !1, null, null, null)), En = Tn.exports, An = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-text-edit"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title w-75 text-truncate"}, [e._v(" " + e._s(e.lang.modal.editor.title) + " "), n("small", {staticClass: "text-muted pl-3"}, [e._v(e._s(e.selectedItem.basename))])]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("codemirror", {
                     ref: "alishfmCodeEditor",
@@ -19644,8 +19644,8 @@
             Pn = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-audio-player"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(" " + e._s(e.lang.modal.audioPlayer.title) + " ")]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("audio", {
                     ref: "alishfmAudio",
@@ -19721,8 +19721,8 @@
             Un = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-video-player"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title w-75 text-truncate"}, [e._v(" " + e._s(e.lang.modal.videoPlayer.title) + " "), n("small", {staticClass: "text-muted pl-3"}, [e._v(e._s(e.videoFile.basename))])]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("video", {
                     ref: "alishfmVideo",
@@ -19753,8 +19753,8 @@
             Kn = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-zip"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.zip.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("label", {attrs: {for: "alishfm-zip-name"}}, [e._v(e._s(e.lang.modal.zip.fieldName))]), n("div", {staticClass: "input-group mb-3"}, [n("input", {
                     directives: [{
@@ -19808,8 +19808,8 @@
             }, Qn = Zn, Jn = Object(be["a"])(Qn, Kn, Xn, !1, null, null, null), er = Jn.exports, tr = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-unzip"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.unzip.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("div", {staticClass: "d-flex justify-content-between"}, [n("div", [n("strong", [e._v(e._s(e.lang.modal.unzip.fieldRadioName))])]), n("div", {staticClass: "form-check form-check-inline"}, [n("input", {
                     directives: [{
@@ -19898,8 +19898,8 @@
             }, ir = rr, ar = Object(be["a"])(ir, tr, nr, !1, null, null, null), or = ar.exports, sr = function () {
                 var e = this, t = e.$createElement, n = e._self._c || t;
                 return n("div", {staticClass: "modal-content alishfm-modal-about"}, [n("div", {staticClass: "modal-header"}, [n("h5", {staticClass: "modal-title"}, [e._v(e._s(e.lang.modal.about.title))]), n("button", {
-                    staticClass: "close",
-                    attrs: {type: "button", "aria-label": "Close"},
+                    staticClass: "btn-close",
+                    attrs: {type: "button","data-bs-dismiss":"modal","aria-label": "Close"},
                     on: {click: e.hideModal}
                 }, [n("span", {attrs: {"aria-hidden": "true"}}, [e._v("×")])])]), n("div", {staticClass: "modal-body"}, [n("strong", [e._v(e._s(e.lang.modal.about.name))]), n("hr"), n("dl", {staticClass: "row"}, [n("dt", {staticClass: "col-3"}, [e._v(e._s(e.lang.modal.about.version) + ":")]), n("dd", {staticClass: "col-9"}, [e._v(e._s(e.version))]), n("dt", {staticClass: "col-3"}, [e._v(e._s(e.lang.modal.about.developer) + ":")]), n("dd", {staticClass: "col-9"}, [e._v("Aleksandr Manekin (alexusmai@gmail.com)")]), n("dt", {staticClass: "col-3"}, [e._v("GitHub:")]), e._m(0)])])])
             }, lr = [function () {
