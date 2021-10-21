@@ -2,7 +2,7 @@
 1. Install package - using composer
 
     ```bash
-    composer require alish/file-manager
+    composer require alish-io/file-manager-pro
     ```
 
 2. If you use Laravel 5.4, then add service provider to config/app.php (for the Laravel 5.5 and higher skip this step):
